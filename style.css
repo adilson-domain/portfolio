@@ -692,3 +692,62 @@ footer {
         font-size: 30px;
     }
 }
+
+/* --- Certifications & Badges Layout --- */
+
+/* Container for all badges/links */
+.certifications-container {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px dashed var(--medium-gray);
+}
+
+/* Grid layout to hold Credly badges and Alura links */
+.badges-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+/* Credly Badge Wrapper */
+.credly-badge {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Alura Links Group - Keeps them all together in a column */
+.alura-links-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 200px;
+}
+
+.alura-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background-color: var(--primary);
+    color: var(--secondary) !important;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.alura-link:hover {
+    background-color: var(--accent);
+    transform: translateX(5px);
+}
+
+/* Icon for the link */
+.alura-link::after {
+    content: '\f08e'; /* External link icon */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
